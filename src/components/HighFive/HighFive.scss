@@ -1,0 +1,9 @@
+.high-five {
+  padding: 1em 1.2em;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+}

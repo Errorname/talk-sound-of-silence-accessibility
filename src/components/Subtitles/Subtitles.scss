@@ -1,0 +1,24 @@
+.subtitles-wrapper {
+  position: fixed;
+  bottom: 10px;
+  width: 100vw;
+  padding: 0 15%;
+  font-size: 1.7em;
+  color: black;
+
+  .subtitles {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    text-align: justify;
+    height: 8.3rem;
+    overflow: hidden;
+    position: relative;
+
+    p {
+      position: absolute;
+      min-height: 8.3rem;
+      bottom: 0;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
