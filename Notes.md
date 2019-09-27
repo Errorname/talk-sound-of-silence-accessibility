@@ -13,7 +13,7 @@
 **Introduction**
 
 - Tell a Story:
-  - Bon, faut que je l'admette. Je suis privilégié. Je suis un mec. Blanc. Jeune. Avec un salaire confortable. Et surtout, je n'ai aucun handicap, quel qu'il soit.
+  - Bon, il faut le dire. Je suis privilégié. Je suis un homme, blanc, jeune, avec un salaire confortable. Et surtout, je n'ai aucun handicap, quel qu'il soit.
   - C'est cool, je ne vais pas m'en plaindre. Le problème, c'est que quand on est privilégié, on a en pas forcément conscience. Alors, quand j'ai commencé à développer dans le web, les problèmes d'accessibilités, c'était pas forcément ma priorité.
   - Et puis, petit à petit, à force d'en entendre parler, j'ai commencé à m'y intéresser, et me rendre compte que l'accessibilité, ça nous concerne tous en fait! Et l'innovation dans ce domaine avance régulièrement !
   - Donc, pour ce talk, j'avais envie de vous faire découvrir un peu les nouveautés, que ça soit au niveau des outils, ou au niveau des APIs.
@@ -37,7 +37,7 @@
 **La référence de l'accessibilité: WCAG**
 
 - Et bien, on peut se tourner vers les WCAG (Web Content Accessibility Guidelines), mis en place par le WAI (Web Accessibility Initiative) qui est un sous-groupe du W3C (World Wide Web Consortium)
-- Les WCAG sont un ensemble de règles applicables à une application pour définir son niveau d'accessibilité: Allant de A pour le minimum requis à AAA pour la meilleure accessibilité. La dernière version des WCAG, la 2.1 est sortie en Juin 2018, il y a seulement un an.
+- Les WCAG sont un ensemble de règles applicables à tout type d'application pour définir son niveau d'accessibilité: Allant de A pour le minimum requis à AAA pour la meilleure accessibilité. La dernière version des WCAG, la 2.1 est sortie en Juin 2018, il y a seulement un an.
 - En tout, il y a 78 règles répartis entre les 3 niveaux. Cela va du simple texte alternatif pour les images à la longueur des timeouts des notifications et alertes.
 
 - Alors, j'en entend déjà certains parmis vous dire: "Ouhlala, mais j'ai pas le temps de lire toutes les règles !". Et ça tombe bien, car je vais maintenant vous montrer des outils pour vous aider à atteindre cet objectif !
@@ -61,6 +61,9 @@
 - Evidemment, le but est d'attendre le 100 dans chaque catégorie. Bento-starter est à ça d'y arriver !
 - Là où ça devient intéressant, c'est qu'il est possible de télécharger Lighthouse pour scripter la vérification, ce qui peut être utile pour de l'intégration continue !
 - Et on va tester ça tout de suite, it's demo time again ! (https://nantes.zenika.com / Extension puis lighthouse puis lighthouse-ci)
+
+- `lighthouse https://nantes.zenika.com --only-categories=accessibility --view`
+- `lighthouse-ci https://nantes.zenika.com --accessibility=100 -s`
 
 - Bon, c'est bien sympa tout ça, mais ça manque un peu de code dans ce talk ! Heureusement, je vais maintenant vous montrer 3 apis HTML et JS qui peuvent intervenir dans l'accessibilité.
 

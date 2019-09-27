@@ -11,7 +11,7 @@ const SpeechSynthesis = ({ step, setCurrent }) => {
   const [microStep, setMicroStep] = useState(0)
 
   const onHighFive = () => {
-    setCurrent(current => ({ ...current, step: 3 }))
+    setCurrent(current => ({ ...current, step: 4 }))
     setMicroStep(1)
   }
 

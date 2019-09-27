@@ -1,0 +1,2 @@
+lighthouse https://nantes.zenika.com --only-categories=accessibility --view
+lighthouse-ci https://nantes.zenika.com --accessibility=100 -s
