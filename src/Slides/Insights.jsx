@@ -19,7 +19,7 @@ const Insights = ({ step }) => (
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: 'black',
+              color: 'white',
               fontSize: '3rem',
               marginTop: '15px',
               textDecoration: 'underline'

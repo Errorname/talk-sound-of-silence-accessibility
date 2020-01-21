@@ -25,11 +25,11 @@ const Lighthouse = ({ step }) => (
       {step === 4 && (
         <>
           <img
-            src={process.env.PUBLIC_URL + '/images/lighthouse_report_nantes.png'}
+            src={process.env.PUBLIC_URL + '/images/lighthouse_report_snowcamp.png'}
             alt="Lighthouse report nantes.zenika.com"
           />
-          <i style={{ marginTop: '2em', fontSize: '1.1em', color: 'black' }}>
-            Rapport de https://nantes.zenika.com
+          <i style={{ marginTop: '2em', fontSize: '1.1em', color: 'white' }}>
+            Rapport de https://snowcamp.io
           </i>
         </>
       )}
@@ -40,7 +40,7 @@ const Lighthouse = ({ step }) => (
             src={process.env.PUBLIC_URL + '/images/lighthouse_report_bento.png'}
             alt="Lighthouse report bento-starter"
           />
-          <i style={{ marginTop: '2em', fontSize: '1.1em', color: 'black' }}>
+          <i style={{ marginTop: '2em', fontSize: '1.1em', color: 'white' }}>
             Rapport de Bento Starter
           </i>
         </>

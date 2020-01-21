@@ -31,7 +31,7 @@ const Estimation = ({ step }) => (
                 style={{
                   flex: '1 0 20%',
                   padding: '25px 0',
-                  color: i === 19 ? 'purple' : 'black'
+                  color: i === 19 ? 'orange' : '#ddd'
                 }}
               />
             ))}

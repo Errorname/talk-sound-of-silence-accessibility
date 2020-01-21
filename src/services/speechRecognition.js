@@ -1,3 +1,5 @@
+const ENABLE_SPEECH_RECOGNITION = false
+
 class SpeechRecognition {
   all = ''
   current = ''
@@ -38,7 +40,11 @@ class SpeechRecognition {
   }
 
   start() {
-    this.recognition.start()
+    if (ENABLE_SPEECH_RECOGNITION) {
+      this.recognition.start()
+    } else {
+      console.log('Speech recognition is disabled')
+    }
   }
 
   stop() {

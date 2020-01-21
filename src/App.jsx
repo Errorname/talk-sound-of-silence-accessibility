@@ -27,7 +27,7 @@ function App() {
   }, [current])
 
   return (
-    <div className="app">
+    <div className="app sea-blue">
       <section className="slides" style={{ left: (current.slide - 1) * -100 + 'vw' }}>
         {slides.map((Slide, i) => {
           const step = current.slide === i + 1 ? current.step : current.slide <= i ? 1 : Slide.steps

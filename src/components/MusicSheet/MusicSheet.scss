@@ -5,6 +5,35 @@
   align-items: center;
 }
 
+.tequila-sunrise {
+  .sheet-music__staff li {
+    border-bottom-color: #999;
+  }
+
+  .sheet-music__items .notes__measure {
+    border-left-color: #999;
+  }
+}
+
+.metal,
+.sea-blue {
+  .sheet-music__staff li {
+    border-bottom-color: white;
+  }
+
+  .sheet-music__items .notes__measure {
+    border-left-color: white;
+  }
+
+  .ion-ios-musical-note {
+    color: white;
+  }
+
+  .ion-ios-musical-notes {
+    color: white;
+  }
+}
+
 .sheet-music {
   width: 100%;
   display: block;
@@ -20,7 +49,7 @@
 
     li {
       display: block;
-      border-bottom: 2px solid #999;
+      border-bottom: 2px solid;
       padding-top: 23px;
     }
   }
@@ -54,7 +83,7 @@
       &__measure {
         & {
           $padding-lg: 30px;
-          border-left: 2px solid #999;
+          border-left: 2px solid;
           padding: 0 $padding-lg;
           //opacity: 0;
 

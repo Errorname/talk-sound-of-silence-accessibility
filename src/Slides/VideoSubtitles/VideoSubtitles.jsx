@@ -12,13 +12,13 @@ const VideoSubtitles = ({ step }) => (
             alt="Sintel movie"
             style={{ width: '70%' }}
           />
-          <i style={{ marginTop: '1rem' }}>
+          <i style={{ marginTop: '1rem', color: '#ccc' }}>
             Open Movie created by{' '}
             <a
               href="http://www.blender.org/foundation/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'black', textDecoration: 'underline' }}
+              style={{ color: 'white', textDecoration: 'underline' }}
             >
               The Blender Foundation
             </a>

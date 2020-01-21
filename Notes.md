@@ -91,4 +91,11 @@
 
 - Et ce n'est pas tout, on peut aussi styliser les sous-titres ! (background-color: red)
 
+**Conclusion**
+
+- Directive Européenne pour l'accessibilité web
+- Site public créé après le 23 September 2018
+- Tous sites public le 23 September 2019
+- Tous sites mobiles le 23 June 2021
+
 **The End**
