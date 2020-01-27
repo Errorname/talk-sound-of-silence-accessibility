@@ -1,4 +1,5 @@
-const ENABLE_SPEECH_RECOGNITION = false
+const AVAILABLE_SPEECH_RECOGNITION = !!window.webkitSpeechRecognition
+const ENABLE_SPEECH_RECOGNITION = AVAILABLE_SPEECH_RECOGNITION && true
 
 class SpeechRecognition {
   all = ''
@@ -6,6 +7,8 @@ class SpeechRecognition {
   callback = null
 
   constructor(lang = 'fr-FR') {
+    if (!ENABLE_SPEECH_RECOGNITION) return
+
     this.recognition = new window.webkitSpeechRecognition()
     this.recognition.lang = lang
     this.recognition.continuous = true
