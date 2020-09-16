@@ -26,10 +26,11 @@ const Lighthouse = ({ step }) => (
         <>
           <img
             src={process.env.PUBLIC_URL + '/images/lighthouse_report_snowcamp.png'}
-            alt="Lighthouse report nantes.zenika.com"
+            alt="Lighthouse report commonly found"
           />
           <i style={{ marginTop: '2em', fontSize: '1.1em', color: 'white' }}>
-            Rapport de https://snowcamp.io
+            {/*Rapport de https://snowcamp.io*/}
+            Rapport que l'on peut trouver sur de nombreux sites
           </i>
         </>
       )}

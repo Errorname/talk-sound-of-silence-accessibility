@@ -24,14 +24,14 @@ const Estimation = ({ step }) => (
               flexDirection: 'row'
             }}
           >
-            {[...new Array(20)].map((x, i) => (
+            {[...new Array(10)].map((x, i) => (
               <i
                 key={i}
-                className={cn('fas fa-7x', i === 19 ? 'fa-child' : 'fa-male')}
+                className={cn('fas fa-9x', i === 9 ? 'fa-child' : 'fa-male')}
                 style={{
                   flex: '1 0 20%',
                   padding: '25px 0',
-                  color: i === 19 ? 'orange' : '#ddd'
+                  color: i === 9 ? 'orange' : '#ddd'
                 }}
               />
             ))}
