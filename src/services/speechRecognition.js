@@ -20,17 +20,18 @@ class SpeechRecognition {
       console.log('onstart')
     }
 
-    this.recognition.onerror = evt => {
+    this.recognition.onerror = (evt) => {
       console.log(evt.error)
     }
 
-    this.recognition.onend = evt => {
+    this.recognition.onend = (evt) => {
+      console.log('onend', evt)
       this.resetCurrent()
       this.recognition.start()
     }
 
-    this.recognition.onresult = evt => {
-      this.current = [...evt.results].map(r => r[0].transcript).join('')
+    this.recognition.onresult = (evt) => {
+      this.current = [...evt.results].map((r) => r[0].transcript).join('')
       if (this.callback) {
         this.callback(this.all + this.current)
       }
@@ -52,7 +53,7 @@ class SpeechRecognition {
 
   stop() {
     this.recognition.onend = null
-    this.recognition.stop()
+    this.recognition.abort()
     this.resetCurrent()
   }
 

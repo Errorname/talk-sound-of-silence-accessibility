@@ -28,7 +28,7 @@
 **Combien sont concernés ?**
 
 - Selon l'OMS, il y aurait dans le monde 253 millions de personnes présentant une déficience visuelle et 360 millions présentant une déficience auditive.
-- Pour donner un ordre de grandeur, il s'agit d'une personne sur 20
+- Pour donner un ordre de grandeur, il s'agit d'une personne sur 10 environ
 - Et ça ne concerne que ceux qui ont des déficiences permanentes !
 - Selon les dernières estimations, ce serait 2 à 3 fois plus que d'utilisateurs d'Internet Explorer.
 
@@ -37,17 +37,23 @@
 **La référence de l'accessibilité: WCAG**
 
 - Et bien, on peut se tourner vers les WCAG (Web Content Accessibility Guidelines), mis en place par le WAI (Web Accessibility Initiative) qui est un sous-groupe du W3C (World Wide Web Consortium)
-- Les WCAG sont un ensemble de règles applicables à tout type d'application pour définir son niveau d'accessibilité: Allant de A pour le minimum requis à AAA pour la meilleure accessibilité. La dernière version des WCAG, la 2.1 est sortie en Juin 2018, il y a seulement un an.
+- Les WCAG sont un ensemble de règles applicables à tout type d'application pour définir son niveau d'accessibilité: Allant de A pour le minimum requis à AAA pour la meilleure accessibilité. La dernière version des WCAG, la 2.2 va sortir officiellement dans 2 mois.
 - En tout, il y a 78 règles répartis entre les 3 niveaux. Cela va du simple texte alternatif pour les images à la longueur des timeouts des notifications et alertes.
 
-- Alors, j'en entend déjà certains parmis vous dire: "Ouhlala, mais j'ai pas le temps de lire toutes les règles !". Et ça tombe bien, car je vais maintenant vous montrer des outils pour vous aider à atteindre cet objectif !
+**A quel point sommes-nous nuls?**
+
+- WebAIM organisation but non lucrative américaine qui a analysé 1 000 000 de site web
+
+- On a vu qu'il y avait 78 règles, et qu'elles ne sont que très rarement appliquées.
+
+**Eslint a11y plugins**
 
 **Microsoft Accessibility Insights**
 
 - Et on commence avec Accessibility Insights de Microsoft !
 - Fraichement lancé en Décembre 2018, Accessibility Insights est une extension de navigateur permettant de vérifier l'accessibilité d'une application web.
 - Cette outil se démarque par sa simplicité d'utilisation permettant aux développeurs de checker la majorité des erreurs d'accessibilité en moins de 5 mins.
-- Accessibility Insights permet aussi de tester l'ensemble des règles d'accessibilités des WCAG 2.1 pour un niveau AA.
+- Accessibility Insights permet aussi de tester exhaustivement l'ensemble des règles d'accessibilités des WCAG 2.1 pour un niveau AA.
 - Comme à son habitude depuis quelques temps, Microsoft a open-sourcé l'extension sur Github pour collaborer avec la communauté.
 - Enfin, l'outil rajoute des petits helpers visuels pour aider au débuggage de l'accessibilité des applications
 - D'ailleurs, on va tester ça tout de suite, it's demo time ! (https://faq.team.zenika / Assessment)
@@ -58,7 +64,7 @@
 
 - Lighthouse, par Google, est une extension permettant de faire des audits d'une application web. Pas seulement d'accessibilité, mais aussi de performance, des bonnes pratiques, de SEO et de PWA. A la différence des Accessibility Insights, LightHouse ne vérifie que ce qui est vérifiable de manière automatique.
 - Il donne un score dans chacune de ses catégories. Par exemple ici, avec le site de Zenika Nantes. (Peut mieux faire !)
-- Evidemment, le but est d'attendre le 100 dans chaque catégorie. Bento-starter est à ça d'y arriver !
+- Evidemment, le but est d'atteindre le 100 dans chaque catégorie. Bento-starter est à ça d'y arriver !
 - Là où ça devient intéressant, c'est qu'il est possible de télécharger Lighthouse pour scripter la vérification, ce qui peut être utile pour de l'intégration continue !
 - Et on va tester ça tout de suite, it's demo time again ! (https://nantes.zenika.com / Extension puis lighthouse puis lighthouse-ci)
 
@@ -94,7 +100,7 @@
 **Conclusion**
 
 - Directive Européenne pour l'accessibilité web
-- Site public créé après le 23 September 2018
+- Site public créé après le 23 September 2018 (En france depuis le 11 février 2005 & entreprise +250M€)
 - Tous sites public le 23 September 2019
 - Tous sites mobiles le 23 June 2021
 

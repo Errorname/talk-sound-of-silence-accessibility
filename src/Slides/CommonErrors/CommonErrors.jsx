@@ -3,12 +3,12 @@ import React from 'react'
 import './CommonErrors.scss'
 
 const errors = [
-  { step: 2, type: 'Low contrast', percentage: 85.3 },
-  { step: 5, type: 'Missing alternative text', percentage: 68 },
-  { step: 10, type: 'Empty links', percentage: 58.1 },
-  { step: 14, type: 'Missing form labels', percentage: 52.8 },
-  { step: 17, type: 'Missing document language', percentage: 33.1 },
-  { step: 20, type: 'Empty buttons', percentage: 25 }
+  { step: 2, type: 'Low contrast', percentage: 86.3 },
+  { step: 5, type: 'Missing alternative text', percentage: 66 },
+  { step: 10, type: 'Empty links', percentage: 59.9 },
+  { step: 14, type: 'Missing form labels', percentage: 53.8 },
+  { step: 17, type: 'Empty buttons', percentage: 28.7 },
+  { step: 22, type: 'Missing document language', percentage: 28 },
 ]
 
 const CommonErrors = ({ step }) => (
@@ -16,8 +16,8 @@ const CommonErrors = ({ step }) => (
     <div className="container slide centered">
       <p className="title is-1 has-text-white">Les erreurs les plus communes</p>
 
-      {(!!errors.find(err => err.step === step) ||
-        !!errors.find(err => err.step - 1 === step) ||
+      {(!!errors.find((err) => err.step === step) ||
+        !!errors.find((err) => err.step - 1 === step) ||
         step === CommonErrors.steps) && (
         <>
           <ul className="chart">
@@ -26,7 +26,7 @@ const CommonErrors = ({ step }) => (
                 <span
                   style={{
                     height: error_step <= step ? percentage + '%' : '0%',
-                    visibility: error_step <= step ? 'visible' : 'hidden'
+                    visibility: error_step <= step ? 'visible' : 'hidden',
                   }}
                   title={type}
                 >
@@ -48,7 +48,7 @@ const CommonErrors = ({ step }) => (
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginTop: '200px'
+            marginTop: '200px',
           }}
         >
           <span style={{ fontSize: '1.8em', color: 'white' }}>aremycoloursaccessible.com</span>
@@ -60,7 +60,7 @@ const CommonErrors = ({ step }) => (
               width: '2000px',
               height: '1000px',
               //zoom: '0.5'
-              transform: 'scale(0.5)'
+              transform: 'scale(0.5)',
             }}
           />
         </div>
@@ -91,7 +91,7 @@ const CommonErrors = ({ step }) => (
           style={{
             overflow: 'hidden',
             height: step === 11 ? '170px' : 'auto',
-            marginBottom: step === 11 ? '177px' : '0'
+            marginBottom: step === 11 ? '177px' : '0',
           }}
         >
           <img
@@ -108,19 +108,12 @@ const CommonErrors = ({ step }) => (
           style={{ maxWidth: '800px' }}
         />
       )}
-      {step === 18 && (
-        <img
-          src={process.env.PUBLIC_URL + '/images/common_errors_missing_document_language.png'}
-          alt="Code for missing document language"
-          style={{ maxWidth: '800px' }}
-        />
-      )}
-      {(step === 21 || step === 22) && (
+      {(step === 18 || step === 19) && (
         <div
           style={{
             overflow: 'hidden',
-            height: step === 21 ? '125px' : 'auto',
-            marginBottom: step === 21 ? '137px' : '0'
+            height: step === 18 ? '125px' : 'auto',
+            marginBottom: step === 18 ? '137px' : '0',
           }}
         >
           <img
@@ -130,10 +123,17 @@ const CommonErrors = ({ step }) => (
           />
         </div>
       )}
+      {step === 23 && (
+        <img
+          src={process.env.PUBLIC_URL + '/images/common_errors_missing_document_language.png'}
+          alt="Code for missing document language"
+          style={{ maxWidth: '800px' }}
+        />
+      )}
     </div>
   </div>
 )
 
-CommonErrors.steps = 23
+CommonErrors.steps = 24
 
 export default CommonErrors

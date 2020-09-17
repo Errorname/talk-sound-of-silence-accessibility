@@ -17,10 +17,10 @@ const Stats = ({ step }) => (
         style={{
           fontSize: '90px',
           margin: '140px 0',
-          visibility: step >= 3 ? 'initial' : 'hidden'
+          visibility: step >= 3 ? 'initial' : 'hidden',
         }}
       >
-        97.8%
+        98.1% <small style={{ fontSize: '40px' }}>(+0.5%)</small>
       </p>
 
       <i

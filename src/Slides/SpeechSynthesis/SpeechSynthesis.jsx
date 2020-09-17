@@ -11,7 +11,7 @@ const SpeechSynthesis = ({ step, setCurrent }) => {
   const [microStep, setMicroStep] = useState(0)
 
   const onHighFive = () => {
-    setCurrent(current => ({ ...current, step: 4 }))
+    setCurrent((current) => ({ ...current, step: 4 }))
     setMicroStep(1)
   }
 
@@ -73,7 +73,7 @@ const SpeechSynthesis = ({ step, setCurrent }) => {
             <div
               style={{
                 height: { 5: 150, 6: 210, 7: 270, 8: 270, 9: 390, 10: 450 }[microStep] || 500,
-                overflow: 'hidden'
+                overflow: 'hidden',
               }}
             >
               <img
