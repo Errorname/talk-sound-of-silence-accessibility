@@ -37,13 +37,14 @@
 **La référence de l'accessibilité: WCAG**
 
 - Et bien, on peut se tourner vers les WCAG (Web Content Accessibility Guidelines), mis en place par le WAI (Web Accessibility Initiative) qui est un sous-groupe du W3C (World Wide Web Consortium)
-- Les WCAG sont un ensemble de règles applicables à tout type d'application pour définir son niveau d'accessibilité: Allant de A pour le minimum requis à AAA pour la meilleure accessibilité. La dernière version des WCAG, la 2.2 va sortir officiellement dans 2 mois.
+- Les WCAG sont un ensemble de règles applicables à tout type d'application pour définir son niveau d'accessibilité: Allant de A pour le minimum requis à AAA pour la meilleure accessibilité. La dernière version des WCAG, la 2.2 devrait sortir cette année.
 - En tout, il y a 78 règles répartis entre les 3 niveaux. Cela va du simple texte alternatif pour les images à la longueur des timeouts des notifications et alertes.
 
 **A quel point sommes-nous nuls?**
 
-- WebAIM organisation but non lucrative américaine qui a analysé 1 000 000 de site web
-
+- WebAIM organisation but non lucrative américaine qui, tous les ans, analyse 1 000 000 de site web et évalue leur accessibilité.
+- A ce rythme, on atteindrait les 100% dans 142 ans !
+- Selon WebAIM, corriger ces quelques type d'erreurs accessibilité améliorerait considérablement l'accessibilité du web.
 - On a vu qu'il y avait 78 règles, et qu'elles ne sont que très rarement appliquées.
 
 **Eslint a11y plugins**
@@ -56,21 +57,20 @@
 - Accessibility Insights permet aussi de tester exhaustivement l'ensemble des règles d'accessibilités des WCAG 2.1 pour un niveau AA.
 - Comme à son habitude depuis quelques temps, Microsoft a open-sourcé l'extension sur Github pour collaborer avec la communauté.
 - Enfin, l'outil rajoute des petits helpers visuels pour aider au débuggage de l'accessibilité des applications
-- D'ailleurs, on va tester ça tout de suite, it's demo time ! (https://faq.team.zenika / Assessment)
+- D'ailleurs, on va tester ça tout de suite, it's demo time ! (Devoxx + Palais des congrès Paris / Assessment)
 
 - Comme on vient de le voir, c'est vraiment très complet. Mais j'en entend encore certains parmis vous dire: "Je n'ai toujours pas assez de temps pour vérifier toutes les règles!". Et bien, encore une fois, ça tombe bien, car je vais maintenant vous montrer un autre outil:
 
 **Lighthouse**
 
 - Lighthouse, par Google, est une extension permettant de faire des audits d'une application web. Pas seulement d'accessibilité, mais aussi de performance, des bonnes pratiques, de SEO et de PWA. A la différence des Accessibility Insights, LightHouse ne vérifie que ce qui est vérifiable de manière automatique.
-- Il donne un score dans chacune de ses catégories. Par exemple ici, avec le site de Zenika Nantes. (Peut mieux faire !)
-- Evidemment, le but est d'atteindre le 100 dans chaque catégorie. Bento-starter est à ça d'y arriver !
+- Il donne un score dans chacune de ses catégories.
 - Là où ça devient intéressant, c'est qu'il est possible de télécharger Lighthouse pour scripter la vérification, ce qui peut être utile pour de l'intégration continue !
-- Et on va tester ça tout de suite, it's demo time again ! (https://nantes.zenika.com / Extension puis lighthouse puis lighthouse-ci)
+- Et on va tester ça tout de suite, it's demo time again ! (Site Devoxx / Extension puis lighthouse)
 
 - `lighthouse https://nantes.zenika.com --only-categories=accessibility --view`
-- `lighthouse-ci https://nantes.zenika.com --accessibility=100 -s`
 
+- Il existe aussi une Github Action "Lighthouse CI" pour vous permettre de vérifier que vous n'introduisiez pas d'erreurs d'accessibilités dans vos PR.
 - Bon, c'est bien sympa tout ça, mais ça manque un peu de code dans ce talk ! Heureusement, je vais maintenant vous montrer 3 apis HTML et JS qui peuvent intervenir dans l'accessibilité.
 
 **Speech Recognition API**
@@ -78,6 +78,7 @@
 - On commence avec la Speech Recognition API. Comme son nom l'indique, cette API va permettre de retranscrire les phrases que j'énonce dans le micro.
 - Vous l'aurez peut-être compris, c'est cette API que j'utilise dans le support de ce talk pour le rendre accessible aux personnes possédant des déficiences auditives.
 - Voilà comment elle fonctionne: ...
+- Selon caniuse.com: 82% de compat (Chrome + Safari) + Firefox avec flag
 
 - Maintenant, passons à l'api suivante:
 
@@ -95,7 +96,7 @@
 - Pour ce talk, je vais prendre l'exemple d'une vidéo tiré du film "Sintel", un Open Movie créé par la Blender Fondation.
 - Pour le rajouter à mon application: ... (explication de code)
 
-- Et ce n'est pas tout, on peut aussi styliser les sous-titres ! (background-color: red)
+- Et ce n'est pas tout, on peut aussi styliser les sous-titres ! (color: yellow)
 
 **Conclusion**
 

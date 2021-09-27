@@ -20,13 +20,13 @@ const Stats = ({ step }) => (
           visibility: step >= 3 ? 'initial' : 'hidden',
         }}
       >
-        98.1% <small style={{ fontSize: '40px' }}>(+0.5%)</small>
+        97.4% <small style={{ fontSize: '40px' }}>(-0.7%)</small>
       </p>
 
       <i
         style={{ fontSize: '1.1em', color: 'white', visibility: step >= 3 ? 'initial' : 'hidden' }}
       >
-        Source: WebAIM
+        Source: WebAIM Million report 2021
       </i>
     </div>
   </div>

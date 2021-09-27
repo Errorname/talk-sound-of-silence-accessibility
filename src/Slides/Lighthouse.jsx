@@ -36,22 +36,10 @@ const Lighthouse = ({ step }) => (
       )}
 
       {step === 5 && (
-        <>
-          <img
-            src={process.env.PUBLIC_URL + '/images/lighthouse_report_bento.png'}
-            alt="Lighthouse report bento-starter"
-          />
-          <i style={{ marginTop: '2em', fontSize: '1.1em', color: 'white' }}>
-            Rapport de Bento Starter
-          </i>
-        </>
+        <Code style={{ marginBottom: '5em' }}>$ npm install -g lighthouse</Code>
       )}
 
       {step === 6 && (
-        <Code style={{ marginBottom: '5em' }}>$ npm install -g lighthouse lighthouse-ci</Code>
-      )}
-
-      {step === 7 && (
         <img
           src={process.env.PUBLIC_URL + '/images/demo.png'}
           alt="Live demo"
@@ -62,6 +50,6 @@ const Lighthouse = ({ step }) => (
   </div>
 )
 
-Lighthouse.steps = 7
+Lighthouse.steps = 6
 
 export default Lighthouse

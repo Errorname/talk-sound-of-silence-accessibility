@@ -3,12 +3,12 @@ import React from 'react'
 import './CommonErrors.scss'
 
 const errors = [
-  { step: 2, type: 'Low contrast', percentage: 86.3 },
-  { step: 5, type: 'Missing alternative text', percentage: 66 },
-  { step: 10, type: 'Empty links', percentage: 59.9 },
-  { step: 14, type: 'Missing form labels', percentage: 53.8 },
-  { step: 17, type: 'Empty buttons', percentage: 28.7 },
-  { step: 22, type: 'Missing document language', percentage: 28 },
+  { step: 2, type: 'Low contrast', percentage: 85.3 },
+  { step: 5, type: 'Missing alternative text', percentage: 68 },
+  { step: 10, type: 'Empty links', percentage: 58.1 },
+  { step: 14, type: 'Missing form labels', percentage: 52.8 },
+  { step: 17, type: 'Missing document language', percentage: 33.1 },
+  { step: 20, type: 'Empty buttons', percentage: 25 },
 ]
 
 const CommonErrors = ({ step }) => (
@@ -48,13 +48,13 @@ const CommonErrors = ({ step }) => (
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginTop: '200px',
+            marginTop: '100px',
           }}
         >
-          <span style={{ fontSize: '1.8em', color: 'white' }}>aremycoloursaccessible.com</span>
+          <span style={{ fontSize: '1.8em', color: 'white' }}>aremycolorsaccessible.com</span>
           <iframe
             title="Color picker"
-            src="https://www.aremycoloursaccessible.com/"
+            src="https://aremycolorsaccessible.com/"
             style={{
               marginTop: '-220px',
               width: '2000px',
@@ -74,9 +74,9 @@ const CommonErrors = ({ step }) => (
       )}
       {step === 7 && (
         <img
-          src={process.env.PUBLIC_URL + '/images/tyche.jpg'}
+          src={process.env.PUBLIC_URL + '/images/cat_dragon.jpeg'}
           alt="My cute cat looking at me over the table"
-          style={{ maxWidth: '400px' }}
+          style={{ maxWidth: '650px' }}
         />
       )}
       {step === 8 && (
@@ -108,12 +108,19 @@ const CommonErrors = ({ step }) => (
           style={{ maxWidth: '800px' }}
         />
       )}
-      {(step === 18 || step === 19) && (
+      {step === 18 && (
+        <img
+          src={process.env.PUBLIC_URL + '/images/common_errors_missing_document_language.png'}
+          alt="Code for missing document language"
+          style={{ maxWidth: '800px' }}
+        />
+      )}
+      {(step === 21 || step === 22) && (
         <div
           style={{
             overflow: 'hidden',
-            height: step === 18 ? '125px' : 'auto',
-            marginBottom: step === 18 ? '137px' : '0',
+            height: step === 21 ? '125px' : 'auto',
+            marginBottom: step === 21 ? '137px' : '0',
           }}
         >
           <img
@@ -123,17 +130,10 @@ const CommonErrors = ({ step }) => (
           />
         </div>
       )}
-      {step === 23 && (
-        <img
-          src={process.env.PUBLIC_URL + '/images/common_errors_missing_document_language.png'}
-          alt="Code for missing document language"
-          style={{ maxWidth: '800px' }}
-        />
-      )}
     </div>
   </div>
 )
 
-CommonErrors.steps = 24
+CommonErrors.steps = 23
 
 export default CommonErrors

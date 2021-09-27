@@ -39,7 +39,10 @@ class SpeechRecognition {
   }
 
   resetCurrent() {
-    this.all += this.current + '. '
+    if (this.current) {
+      this.all += this.current + '. '
+    }
+    this.callback(this.all);
     this.current = ''
   }
 

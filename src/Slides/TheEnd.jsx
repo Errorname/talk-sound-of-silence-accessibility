@@ -11,6 +11,7 @@ const TheEnd = ({ step }) => (
       <span role="img" aria-label="thinking" style={{ fontSize: '90px' }}>
         🤔
       </span>
+      <small className="has-text-white" style={{marginTop: '200px'}}><i>Psst, on recrute chez October!</i></small>
     </div>
     <div className="footer">
       <span>
