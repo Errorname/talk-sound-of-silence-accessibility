@@ -20,10 +20,14 @@ const Description = ({ step }) => (
         <div
           style={{
             height: '100%',
-            padding: '7.5em 0 9.5em 0'
+            padding: '7.5em 0 9.5em 0',
           }}
         >
-          <img src={process.env.PUBLIC_URL + "images/types.png"} alt="types of disabilities" style={{ height: '100%' }} />
+          <img
+            src={process.env.PUBLIC_URL + '/images/types.png'}
+            alt="types of disabilities"
+            style={{ height: '100%' }}
+          />
         </div>
       )}
     </div>

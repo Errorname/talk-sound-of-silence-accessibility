@@ -2,6 +2,7 @@
   "name": "talk-sound-of-silence-accessibility",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://errorna.me/preview/soundofsilence",
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^5.0.0",
