@@ -20,6 +20,11 @@ const Title = () => (
       </div>
       <MusicSheet />
     </div>
+    <div className="footer">
+      <span>
+        Thibaud Courtoison - @Errorname_
+      </span>
+    </div>
   </div>
 )
 
